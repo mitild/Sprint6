@@ -3,14 +3,15 @@ import styled from "styled-components"
 const StyledP = styled.p`
   border: 2px solid black;
   border-radius: 25px;
-  padding: .7em 1.2em;
-  margin: 1em 3em;
+  padding: .9em 1.4em;
+  margin: 1.5em 3em;
+  font-size: .8rem;
 `;
 
-const Escena = ( {text} ) => {
+const Escena = ({ text, bg }) => {
   return(
     <div>
-      <StyledP> { text } </StyledP>
+      <StyledP style={{ backgroundColor: `${bg}` }}> { text } </StyledP>
     </div>
   )
 }
